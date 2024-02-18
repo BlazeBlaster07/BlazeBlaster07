@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Favorite Quotes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        .quote-container {
+            width: 60%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+            margin-top: 20px;
+        }
+        .quote {
+            font-size: 20px;
+            color: #333;
+        }
+        .author {
+            font-size: 16px;
+            color: #888;
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="quote-container" id="quote-container">
+        <!-- Quotes will be added here by JavaScript -->
+    </div>
+
+    <div style="width: 60%; margin: 0 auto; padding: 20px;">
+        <input type="text" id="quote-input" placeholder="Enter your quote" style="width: 100%; padding: 10px;">
+        <input type="text" id="author-input" placeholder="Enter author's name" style="width: 100%; padding: 10px; margin-top: 10px;">
+        <button onclick="addQuote()" style="width: 100%; padding: 10px; margin-top: 10px;">Add Quote</button>
+    </div>
+
+    <script>
+        function addQuote() {
+            var quote = document.getElementById('quote-input').value;
+            var author = document.getElementById('author-input').value;
+
+            var quoteDiv = document.createElement('div');
+            quoteDiv.innerHTML = '<p class="quote">"' + quote + '"</p><p class="author">- ' + author + '</p>';
+            document.getElementById('quote-container').appendChild(quoteDiv);
+        }
+    </script>
+</body>
+</html>
