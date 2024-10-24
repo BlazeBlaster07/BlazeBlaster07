@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Your Name</title>
+    <style>
+        /* General styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        nav ul {
+            list-style-type: none;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .intro {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .intro h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .intro p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            margin: 40px 0;
+            font-size: 2em;
+        }
+
+        .skills, .projects {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .skill-item, .project-item {
+            background-color: #fff;
+            padding: 20px;
+            margin: 10px;
+            width: 30%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+
+        .project-item img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        footer p {
+            margin-bottom: 10px;
+        }
+
+        footer ul {
+            list-style-type: none;
+        }
+
+        footer ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        footer ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Your Name</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Introduction Section -->
+    <section class="intro container" id="about">
+        <h2>Hello, I'm [Your Name]</h2>
+        <p>I’m a passionate [Your Profession/Field] who loves building and designing solutions. Welcome to my portfolio where you can find my skills, projects, and ways to contact me.</p>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="container" id="skills">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills">
+            <div class="skill-item">
+                <h3>HTML & CSS</h3>
+                <p>Experience in creating responsive and visually appealing web pages.</p>
+            </div>
+            <div class="skill-item">
+                <h3>JavaScript</h3>
+                <p>Proficient in creating dynamic web applications using JavaScript frameworks.</p>
+            </div>
+            <div class="skill-item">
+                <h3>Python</h3>
+                <p>Skilled in backend development and data analysis with Python.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="container" id="projects">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects">
+            <div class="project-item">
+                <h3>Project 1: Portfolio Website</h3>
+                <img src="portfolio.png" alt="Portfolio Website">
+                <p>Developed a personal portfolio website using HTML, CSS, and JavaScript to showcase my projects and skills.</p>
+            </div>
+            <div class="project-item">
+                <h3>Project 2: Todo App</h3>
+                <img src="todo-app.png" alt="Todo App">
+                <p>A task management app built with React.js and Firebase for real-time updates and storage.</p>
+            </div>
+            <div class="project-item">
+                <h3>Project 3: Machine Learning Model</h3>
+                <img src="ml-model.png" alt="ML Model">
+                <p>Developed a machine learning model using Python and Scikit-learn to predict customer churn for a telecom company.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="container" id="contact">
+        <h2 class="section-title">Contact Me</h2>
+        <p>If you'd like to work together or have any questions, feel free to reach out to me!</p>
+        <footer>
+            <ul>
+                <li><a href="mailto:yourname@example.com">Email</a></li>
+                <li><a href="https://linkedin.com/in/yourprofile">LinkedIn</a></li>
+                <li><a href="https://github.com/yourgithub">GitHub</a></li>
+            </ul>
+        </footer>
+    </section>
+
+</body>
+</html>
